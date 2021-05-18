@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musci Player</title>
+    <link rel="stylesheet" href="css/music.css">
+</head>
+<body>
+    <div class="mobile-view">
+        <div class="wrap">
+            <div class="wrap-inner">
+
+                <ul class="play-list">
+
+                </ul>
+                <button class="play-btn-list">
+                    <img src="assets/down-arrow.svg" alt="">
+                </button>
+            </div>
+
+
+        </div>
+        <div class="songs">
+            <div class="album-image">
+
+            </div>
+
+            <h4 class="title"></h4>
+        </div>
+        <div class="audio-player">
+
+
+            <audio  preload="auto">
+                    Your browser does not support the
+                <code>audio</code> element.
+            </audio>
+            <div class="slider">
+
+                <input type="range"  value="0" id="myRange">
+                <button class="icon"  ></button>
+                <div class="slider-progres" style="width:0%;"></div>
+            </div>
+            <div class="timer">
+                <span id="ctime">0.00</span>
+                <span id="endtime">0.00</span>
+            </div>
+            <div class="control">
+                <button class="backward"> <img src="assets/forward-button.svg" alt=""> </button>
+                <button id="play"> <img src="assets/play.svg"  play="assets/play.svg" pause="assets/pause.svg" alt=""></button>
+                <button class="forward"> <img src="assets/forward-button.svg" alt=""> </button>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/slider.js">
+    </script>
+</body>
+</html>
